@@ -26,7 +26,7 @@
     "files": [
       "main.js",
       "preload.js",
-      "app/**/*",
+      "index.html",
       "package.json"
     ],
     "directories": {
@@ -36,7 +36,9 @@
       "target": [
         {
           "target": "portable",
-          "arch": ["x64"]
+          "arch": [
+            "x64"
+          ]
         }
       ],
       "artifactName": "Senior-Video-Editor-Desktop-${version}.${ext}"

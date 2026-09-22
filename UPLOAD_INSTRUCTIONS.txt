@@ -1,0 +1,32 @@
+SENIOR VIDEO EDITOR - EASY GITHUB UPLOAD
+
+STEP 1
+Upload ALL 6 visible files in this folder to the root of your GitHub repo:
+- index.html
+- main.js
+- preload.js
+- package.json
+- README.md
+- BUILD_WINDOWS_WORKFLOW.txt
+
+STEP 2
+Commit changes.
+
+STEP 3
+Open GitHub repo > Actions.
+If GitHub shows 'set up a workflow yourself', click it.
+Delete the sample workflow text.
+
+STEP 4
+Open BUILD_WINDOWS_WORKFLOW.txt on GitHub, copy all its text,
+and paste it into the workflow editor.
+
+The workflow file must be saved as:
+.github/workflows/build-windows.yml
+
+STEP 5
+Commit the workflow, then go to:
+Actions > Build Windows Desktop App > Run workflow
+
+No hidden .github folder needs to be uploaded from Windows.
+No app folder is needed in this fixed package.
