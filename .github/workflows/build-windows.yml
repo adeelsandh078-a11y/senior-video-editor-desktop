@@ -3,7 +3,8 @@ name: Build Windows Desktop App
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches:
+      - main
     paths:
       - 'index.html'
       - 'main.js'
@@ -14,14 +15,15 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Node
-  uses: actions/setup-node@v4
-  with:
-    node-version: '22'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
 
       - name: Install dependencies
         run: npm install
@@ -33,5 +35,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Senior-Video-Editor-Desktop-Windows
-          path: dist/*.exe
-          if-no-files-found: error
+          path: dist/**
