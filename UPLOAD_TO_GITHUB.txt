@@ -1,0 +1,14 @@
+UPLOAD THESE FILES/FOLDERS TO YOUR GITHUB REPO:
+
+app/
+  index.html
+.github/
+  workflows/
+    build-windows.yml
+main.js
+preload.js
+package.json
+README.md
+
+Then go to GitHub -> Actions -> Build Windows Desktop App -> Run workflow.
+When finished, download the Windows artifact and extract the EXE.
